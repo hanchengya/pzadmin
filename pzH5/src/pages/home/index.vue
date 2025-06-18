@@ -16,7 +16,6 @@
             v-for="item in homeData.slides"
             :key="item.id"
             >
-            
             <van-image
                 radius="5"
                  :src="'/images/' + item.filename"
@@ -36,7 +35,6 @@
                 :src="'/images/'+item.navsname"
                 />
         </van-col>
-
     </van-row>
      <van-row  class="yy-list"
      @click="goOrder(item)"
@@ -47,8 +45,7 @@
         width="100"
         height="90"
         :src="'/images/' + item.filename" 
-        />
-           
+        />   
         </van-col>
         <van-col span="15" class="yy">
             <div class="yy-name">
