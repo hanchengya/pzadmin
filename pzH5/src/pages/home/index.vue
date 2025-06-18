@@ -16,6 +16,7 @@
             v-for="item in homeData.slides"
             :key="item.id"
             >
+            
             <van-image
                 radius="5"
                  :src="'/images/' + item.filename"

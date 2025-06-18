@@ -9,7 +9,6 @@
                     placeholder="请输入用户名"
                     name="用户名"
                 />
-
                 <van-field
                     v-model="form.passWord"
                     type= "password"
@@ -23,7 +22,6 @@
                 </div>    
             </van-cell-group>
         </van-form>
-
 </template>
 <script setup>
 import { reactive,getCurrentInstance } from 'vue';
@@ -36,7 +34,7 @@ const form = reactive({
     userName:'',
     passWord:''
 })
-//表单提交
+//表单提交1111
 const onSubmit =async ()=>{
     const  {data} =await proxy.$api.login(form)
     if(data.code===10000){
@@ -45,7 +43,6 @@ const onSubmit =async ()=>{
         router.push('/home')
     }
 }
-
 </script>
 <style lang="less" scoped>
     h1{
